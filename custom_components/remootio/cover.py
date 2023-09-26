@@ -69,6 +69,7 @@ class RemootioCover(cover.CoverEntity):
         self._remootio_client = remootio_client
         self._attr_device_info = DeviceInfo(
             name=name,
+            identifiers={(DOMAIN, unique_id)},
             manufacturer="Assemblabs Ltd",
         )
 
